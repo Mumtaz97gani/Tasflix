@@ -103,15 +103,8 @@ function Home() {
               />
               <Card.Body style={{ backgroundColor: "#ffffff" }}>
                 <Card.Title>
-                  {val.Title}({val.Year})
+                  {val.Title} ({val.Year})
                 </Card.Title>
-                {/* <Button
-                  variant="primary"
-                  className="card-button"
-                  onClick={() => navigate(`/movie/${val.imdbID}`)} // Navigate to the MovieDetail component
-                >
-                  Details
-                </Button> */}
               </Card.Body>
             </Card>
           ))
@@ -120,16 +113,17 @@ function Home() {
         )}
       </div>
       <div className="d-flex justify-content-center mt-3">
-        {Array.from({ length: totalPages }, (_, index) => (
-          <Button
-            key={index + 1}
-            onClick={() => paginate(index + 1)}
-            className={currentPage === index + 1 ? "active" : ""}
-            style={{ margin: "0 5px" }}
-          >
-            {index + 1}
-          </Button>
-        ))}
+        {totalPages > 1 &&
+          Array.from({ length: totalPages }, (_, index) => (
+            <Button
+              key={index + 1}
+              onClick={() => paginate(index + 1)}
+              className={currentPage === index + 1 ? "active" : ""}
+              style={{ margin: "0 5px" }}
+            >
+              {index + 1}
+            </Button>
+          ))}
       </div>
     </>
   );
