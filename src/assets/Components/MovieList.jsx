@@ -12,7 +12,7 @@ function MovieList() {
   useEffect(() => {
     const fetchMovie = async () => {
       const response = await fetch(
-        "http://www.omdbapi.com/?s=harry&apikey=a44d7000"
+        "https://www.omdbapi.com/?s=harry&apikey=a44d7000"
       );
       const finalData = await response.json();
       console.log(finalData);
