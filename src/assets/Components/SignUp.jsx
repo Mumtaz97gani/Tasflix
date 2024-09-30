@@ -4,6 +4,8 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+Link
 function SignUp() {
   const [inputData, setInputData] = useState({ password: "", email: "" });
   function handleSubmit(event) {
@@ -46,6 +48,11 @@ function SignUp() {
         <Button variant="primary" type="submit">
           SignUp
         </Button>
+        <Link to="/">
+          <Button variant="primary" type="submit" className="ms-2">
+            back to logIn
+          </Button>
+        </Link>
       </Form>
     </div>
   );
