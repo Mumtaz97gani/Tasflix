@@ -86,7 +86,7 @@ function Home() {
         </Row>
       </Form>
       <div
-        className="d-flex flex-wrap mt-3 pt-3 "
+        className="d-flex flex-wrap mt-3 pt-3 ms-5"
         style={{ fontFamily: "Droid Sans" }}
       >
         {currentMovies.length > 0 ? (
