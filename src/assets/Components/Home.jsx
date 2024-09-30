@@ -18,7 +18,7 @@ function Home() {
   // Function to fetch movies based on the search query
   const fetchMovies = async (query) => {
     const response = await fetch(
-      `http://www.omdbapi.com/?s=${query}&apikey=a44d7000`
+      `https://www.omdbapi.com/?s=${query}&apikey=a44d7000`
     );
     const finalData = await response.json();
     if (finalData.Search) {
