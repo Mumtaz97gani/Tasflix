@@ -11,7 +11,7 @@ function Home() {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [moviesPerPage] = useState(4);
+  const [moviesPerPage] = useState(5);
   const location = useLocation();
   const navigate = useNavigate();
 
