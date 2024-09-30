@@ -11,7 +11,7 @@ function Home() {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [moviesPerPage] = useState(5);
+  const [moviesPerPage] = useState(4);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -86,7 +86,7 @@ function Home() {
         </Row>
       </Form>
       <div
-        className="d-flex flex-wrap mt-3 pt-3 ms-5"
+        className="d-flex flex-wrap mt-3 pt-3 "
         style={{ fontFamily: "Droid Sans" }}
       >
         {currentMovies.length > 0 ? (
