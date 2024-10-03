@@ -12,7 +12,7 @@ function MovieDetail() {
   // Function to fetch movie details
   const fetchMovieDetails = async () => {
     const response = await fetch(
-      `http://www.omdbapi.com/?i=${id}&apikey=a44d7000`
+      `https://www.omdbapi.com/?i=${id}&apikey=a44d7000`
     );
     const data = await response.json();
     setMovie(data);
@@ -71,8 +71,8 @@ function MovieDetail() {
               <strong>Awards:</strong> {movie.Language}
             </Card.Text>
             <Button
-              className="button"
-              variant="primary"
+              className="btn-success"
+              variant="btn-success"
               onClick={() => window.history.back()}
             >
               Back

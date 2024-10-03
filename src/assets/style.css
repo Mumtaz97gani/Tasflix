@@ -10,29 +10,45 @@ img {
 body {
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background-color: #ffffff;
+}
+.form-lebel {
+  font-weight: 500;
 }
 
+.login-h {
+  font-size: 3rem;
+
+  font-weight: 500;
+}
+.signup-H {
+  color: #26034e;
+}
 .login-form {
   width: 400px;
   margin-top: 3rem;
   height: 100%;
-  background: linear-gradient(rgb(121, 165, 184), rgb(94, 4, 94));
+
   border-radius: 1rem;
   padding: 1rem;
+  border: 1px solid black;
+  box-decoration-break: slice;
+}
+.my-link {
+  color: rgb(14, 13, 13);
 }
 .button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 0.2rem;
   border: none;
-  background-color: rgb(93, 123, 204);
+  background-color: rgb(19, 55, 153);
 }
 .card-detail {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: rgb(233, 242, 243);
+  background: linear-gradient(#04aa6d, white);
   color: #130808;
   padding: 2rem;
 
@@ -48,7 +64,7 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(233, 242, 243);
+  background-color: #04aa6d;
 }
 .nav-h {
   font-style: oblique;
@@ -64,4 +80,11 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+.logout {
+  border: none;
+  background: rgb(200, 200, 238);
+  color: #442121;
+  border-radius: 0.2rem;
+  text-decoration: none;
 }
