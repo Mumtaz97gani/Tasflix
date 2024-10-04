@@ -9,8 +9,11 @@ function NavBar() {
         <h2 className=" nav-h">Tasflix</h2>
         <Form inline>
           <p>eve.holt@</p>
-          <Link to="/signup" className="m-4 text-white decoration-none">
+{/*           <Link to="/signup" className="m-4 text-white decoration-none">
             logout
+          </Link> */}
+          <Link to="/signup">
+            <button className=" px-2 py-2 rounded">Logout</button>
           </Link>
         </Form>
       </Navbar>
